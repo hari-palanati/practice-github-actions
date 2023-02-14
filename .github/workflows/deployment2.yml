@@ -2,7 +2,7 @@ name: Deploy Project
 on: push
 jobs:
   lint:
-    uns-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3
@@ -11,7 +11,7 @@ jobs:
       - name: Lint
         run: npm run lint
   test:
-    uns-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3
